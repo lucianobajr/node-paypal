@@ -1,0 +1,24 @@
+{
+    "products": [{
+            "id": 1,
+            "titulo": "ReactJs",
+            "descricao": "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web",
+            "img": "/images/react.svg",
+            "preco": 55.85
+        },
+        {
+            "id": 2,
+            "titulo": "VueJs",
+            "descricao": "DVue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única",
+            "img": "/images/vue.png",
+            "preco": 30.85
+        },
+        {
+            "id": 3,
+            "titulo": "AngularJs",
+            "descricao": "Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript liderado pela Equipe Angular do Google ",
+            "img": "/images/angular.svg",
+            "preco": 96.99
+        }
+    ]
+}

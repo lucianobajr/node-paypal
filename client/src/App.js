@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+
+import { ToastContainer } from "react-toastify";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./routes";
+
+// Styles
+import GlobalStyle from "./styles/global";
+import "./styles/fonts.css";
 function App() {
   return (
-    <div className="App">
-      <p>Ola!</p>
-    </div>
+    <BrowserRouter>
+      <Routes />
+      <GlobalStyle />
+      <ToastContainer autoClose={3000} />
+    </BrowserRouter>
   );
 }
 
