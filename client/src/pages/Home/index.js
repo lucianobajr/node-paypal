@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Wrapper, Content, Header, Footer, Main, Item } from "./styles";
 import { Zoom, Fade } from "react-reveal";
@@ -15,7 +15,7 @@ import iconLocal from "../../assets/icons/local.svg";
 
 import { products } from "../../data/products.json";
 
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Home() {
 
@@ -112,7 +112,7 @@ function Home() {
               </div>
             </div>
           </Fade>
-          
+
           <Fade right duration={3500} distance="20px">
             <div className="fifth-content">
               <p id="title">Some of our Services</p>
@@ -141,8 +141,22 @@ function Home() {
 
         <Footer>
           <div className="logo">
-            <img src={logo} alt=""/>
+            <img src={logo} alt="" />
             <p id="name-logo">Expirience</p>
+          </div>
+
+          <p id="subtitle">Your technology and experience platform</p>
+
+          <div className="social">
+            <div>
+              <FaFacebookF size={22} color="#F53838" />
+            </div>
+            <div>
+              <FaTwitter size={22} color="#F53838" />
+            </div>
+            <div>
+              <FaInstagram size={22} color="#F53838" />
+            </div>
           </div>
         </Footer>
       </Content>

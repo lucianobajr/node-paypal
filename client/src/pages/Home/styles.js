@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { darken } from 'polished'
 
@@ -378,12 +378,12 @@ export const Footer = styled.div `
 
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 8%, rgba(238,238,238,1) 49%, rgba(255,255,255,1) 92%);
+    padding-left:100px;
 
     .logo{
         display:flex;
 
         margin-top:50px;
-        margin-left:40px;
 
         #name-logo{
             color:#000;
@@ -392,6 +392,46 @@ export const Footer = styled.div `
             font-family:Lobster;
 
             margin-left:15px;
+        }
+    }
+
+    #subtitle{
+        margin-top:20px;
+
+
+        font-family:GothamProRegular; 
+        font-size:16px;  
+        width:200px;
+    }
+
+    .social{
+        display:flex;
+
+        margin-top:30px;
+
+
+        div{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            border-radius:50%;
+
+            height:40px;
+            width:40px;
+            background:transparent;
+
+            box-shadow: 1px 5px 10px 1px rgba(49, 22, 159, 0.1);
+
+            margin-right:20px;
+
+            cursor: pointer;
+
+            transition: all .3s ease-in-out 0s;
+
+            &:hover{
+                background-color:${darken(0.025,"#fff")};
+            }
         }
     }
 `;
