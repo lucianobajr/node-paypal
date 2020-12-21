@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { darken } from 'polished'
 
@@ -16,7 +16,7 @@ export const Wrapper = styled.div `
 
 export const Content = styled.div `
     width:1366px;
-    height: 3200px;
+    height: 3600px;
 
     display:flex;
     flex-direction:column;
@@ -53,7 +53,7 @@ export const Header = styled.header `
 
 export const Main = styled.section `
     width:100%;
-    height: 2500px;
+    height: 3100px;
 
     margin-top:100px;
 
@@ -103,7 +103,7 @@ export const Main = styled.section `
                 transition: all .3s ease-in-out 0s;
 
                 &:hover{
-                    background-color:${darken(0.15,'#F53838')};
+                    background-color:${darken(0.15, '#F53838')};
                 }
             }
         }
@@ -146,7 +146,7 @@ export const Main = styled.section `
                 cursor: pointer;
 
                 &:hover{
-                    background-color:${darken(0.05,'#FFECEC')};
+                    background-color:${darken(0.05, '#FFECEC')};
                 }
             }
 
@@ -257,6 +257,119 @@ export const Main = styled.section `
             margin-bottom:100px;
         }
     }
+
+    .fifth-content{
+        margin-top:50px;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+        #title{
+            font-family:GothamPro;  
+            font-weight:bold;
+            font-size:26px;
+            line-height:1.5;
+
+            margin-bottom:30px;
+        }
+       .content{
+            display:flex;
+       }
+
+    }
+`;
+
+
+
+export const Item = styled.div `
+    height: 760px;
+    width:330px;
+    border-radius:10px;
+    border: 2px  solid #ddd;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding-top:50px;
+    margin-right:30px;
+
+    cursor: pointer;
+
+    box-shadow: 1px 1px 10px 1px rgba(49, 22, 159, 0.1);
+
+    transition: all .3s ease-in-out 0s;
+    
+
+    .logo-icon{
+        height: 150px;
+    }
+
+    #title-item{
+        font-weight:bold;
+        font-size:35px;
+        text-align:center;
+
+        font-family:GothamPro;
+
+        margin-top:20px;
+        margin-bottom:30px;
+    }
+
+    #description{
+        margin-top:100px;
+    
+
+        font-family:GothamProRegular; 
+        font-size:16px;
+
+        width:280px;
+        text-align:center;
+    }
+
+    #value{
+        margin-top:100px;
+
+        font-weight:bold;
+        font-size:20px;
+        text-align:center;
+
+        font-family:GothamPro;
+    }
+
+    #btn-get{
+        width:177px;
+        height: 45px;
+
+        margin-top:50px;
+
+        border:2px solid #F53838;
+        background:transparent;
+
+        font-weight:bold;
+        font-size:15px;
+        text-align:center;
+        color:#F53838;
+        font-family:GothamPro;
+        box-shadow: 1px 1px 10px 1px rgba(49, 22, 159, 0.1);
+
+        transition: all .8s ease-in-out 0s;
+
+        border-radius:30px;
+
+        &:hover{
+            border:none;
+            background-color:#F53838;
+            color:#fff;
+        }
+    }
+
+
+    &:hover{
+        box-shadow: 1px 1px 10px 1px rgb(245, 56, 56,0.3);
+    }
+
 `;
 
 export const Footer = styled.div `
@@ -266,4 +379,19 @@ export const Footer = styled.div `
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 8%, rgba(238,238,238,1) 49%, rgba(255,255,255,1) 92%);
 
+    .logo{
+        display:flex;
+
+        margin-top:50px;
+        margin-left:40px;
+
+        #name-logo{
+            color:#000;
+            font-size:30px;
+            font-weight:500;
+            font-family:Lobster;
+
+            margin-left:15px;
+        }
+    }
 `;

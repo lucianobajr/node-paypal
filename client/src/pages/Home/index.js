@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Wrapper, Content, Header, Footer, Main } from "./styles";
+import { Wrapper, Content, Header, Footer, Main, Item } from "./styles";
 import { Zoom, Fade } from "react-reveal";
 
 import logo from "../../assets/icons/logo.svg";
@@ -13,9 +13,12 @@ import iconUser from "../../assets/icons/user.svg";
 import iconServer from "../../assets/icons/server.svg";
 import iconLocal from "../../assets/icons/local.svg";
 
+import { products } from "../../data/products.json";
+
 import { FaCheck } from "react-icons/fa";
 
 function Home() {
+
   return (
     <Wrapper>
       <Content>
@@ -109,7 +112,25 @@ function Home() {
               </div>
             </div>
           </Fade>
+          
           <Fade right duration={3500} distance="20px">
+            <div className="fifth-content">
+              <p id="title">Some of our Services</p>
+              <div className="content">
+                {products.map((preview) => (
+                  <Item>
+                    <img className="logo-icon" src={preview.img} alt="" />
+                    <p id="title-item">{preview.titulo}</p>
+                    <p id="description">{preview.descricao}</p>
+                    <p id="value">$ {preview.preco}</p>
+
+                    <button id="btn-get">Get</button>
+                  </Item>
+                ))}
+              </div>
+            </div>
+          </Fade>
+          <Fade left duration={3500} distance="20px">
             <div className="four-content">
               <p id="title">We have customers all over the world</p>
               <img src={global} alt="" />
@@ -118,7 +139,12 @@ function Home() {
           </Fade>
         </Main>
 
-        <Footer></Footer>
+        <Footer>
+          <div className="logo">
+            <img src={logo} alt=""/>
+            <p id="name-logo">Expirience</p>
+          </div>
+        </Footer>
       </Content>
     </Wrapper>
   );
