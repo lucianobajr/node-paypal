@@ -18,7 +18,6 @@ import { products } from "../../data/products.json";
 import { FaCheck, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Home() {
-
   return (
     <Wrapper>
       <Content>
