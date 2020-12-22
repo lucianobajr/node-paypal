@@ -17,7 +17,7 @@ class PaymentController {
         const createPaymentJson = ({ carrinho, valor, descricao }) => ({
             "intent": "sale",
             "payer": { "payment_method": "paypal" },
-            "redirect_urls": { "return_url": "http://localhost:3333/success", "cancel_url": "http://localhost:3333/cancel" },
+            "redirect_urls": { "return_url": "http://localhost:3000/success", "cancel_url": "http://localhost:3000/cancel" },
             "transactions": [{
                 "item_list": { "items": carrinho },
                 "amount": valor,

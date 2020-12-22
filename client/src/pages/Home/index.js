@@ -28,12 +28,14 @@ function Home() {
         },
       });
 
-      window.open(`${link.data.link}`, "_blank")
+      window.open(`${link.data.link}`,'_self')
     } catch (error) {
       console.log("erro!");
     }
   }
 
+
+  
   return (
     <Wrapper>
       <Content>
