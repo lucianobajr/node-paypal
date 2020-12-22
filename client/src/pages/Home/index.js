@@ -17,7 +17,23 @@ import { products } from "../../data/products.json";
 
 import { FaCheck, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
+import api from "../../services/api";
+
 function Home() {
+  async function handlePay(id) {
+    try {
+     const link = await api.post(`/buy?id=${id}`, {
+        headers: {
+          Authorization: "Bearer AX8vrqDCrndtRtfjY3KcgnZHGCgNTJsLuxf8Yhc0hysU2vsUOxeuWmiDsQ8O9Sv5eXx4EzirYMUbOiYY",
+        },
+      });
+
+      window.open(`${link.data.link}`, "_blank")
+    } catch (error) {
+      console.log("erro!");
+    }
+  }
+
   return (
     <Wrapper>
       <Content>
@@ -123,7 +139,9 @@ function Home() {
                     <p id="description">{preview.descricao}</p>
                     <p id="value">$ {preview.preco}</p>
 
-                    <button id="btn-get">Get</button>
+                    <button id="btn-get" onClick={() => handlePay(preview.id)}>
+                      Get
+                    </button>
                   </Item>
                 ))}
               </div>
