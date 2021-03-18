@@ -7,8 +7,6 @@ import routes from './routes';
 
 import 'express-async-errors';
 
-import './database'
-
 class App {
     constructor() {
         this.server = express();
