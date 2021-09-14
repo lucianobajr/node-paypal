@@ -24,7 +24,7 @@ function Home() {
     try {
      const link = await api.post(`/buy?id=${id}`, {
         headers: {
-          Authorization: "Bearer AX8vrqDCrndtRtfjY3KcgnZHGCgNTJsLuxf8Yhc0hysU2vsUOxeuWmiDsQ8O9Sv5eXx4EzirYMUbOiYY",
+          Authorization: `Bearer ${process.env.REACT_APP_PAYPAL}`,
         },
       });
 
@@ -33,8 +33,6 @@ function Home() {
       console.log("erro!");
     }
   }
-
-
   
   return (
     <Wrapper>
