@@ -7,7 +7,7 @@
         "start": "nodemon src/server.js",
         "dev": "nodemon src/server.js",
         "build": "sucrase ./src -d ./dist --transforms imports",
-        "run:server":"node dist/server.js"
+        "server":"node dist/server.js"
     },
     "keywords": [],
     "author": "",
