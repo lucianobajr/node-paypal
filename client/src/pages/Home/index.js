@@ -22,7 +22,7 @@ import api from "../../services/api";
 function Home() {
   async function handlePay(id) {
     try {
-     const link = await api.post(`/buy?id=${id}`, {
+     const link = await api.post(`buy?id=${id}`, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_PAYPAL}`,
         },
