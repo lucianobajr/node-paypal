@@ -1,6 +1,6 @@
 import paypal from "paypal-rest-sdk";
 
-import { products } from "../../data/products.json";
+import { products } from "../../../src/data/products.json";
 
 paypal.configure({
   mode: "sandbox",
