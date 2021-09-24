@@ -6,7 +6,7 @@ import Routes from "./routes";
 
 // Styles
 import GlobalStyle from "./styles/global";
-import "./styles/fonts.css";
+
 function App() {
   return (
     <BrowserRouter>

@@ -1,10 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
+import styled,{ createGlobalStyle } from 'styled-components'
 
 import 'react-toastify/dist/ReactToastify.css'
 
 export default createGlobalStyle `
-    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600;1,700;1,900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     *{
         margin:0;
         padding:0;
@@ -20,7 +18,7 @@ export default createGlobalStyle `
 
     html,body,#root {
         height: 100%;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Roboto Slab', serif;
     }
 
     body {
@@ -42,3 +40,11 @@ export default createGlobalStyle `
         list-style:none;
     }
 `
+
+export const Container = styled.div`
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+`;
