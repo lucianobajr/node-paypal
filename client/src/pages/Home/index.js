@@ -10,18 +10,19 @@ import {
   ColumnSpecial,
   ImgWrapperSpecial,
   ImgSpecial,
+  ProductsContent
 } from "./styles";
-import { Zoom, Fade } from "react-reveal";
+//import { Zoom, Fade } from "react-reveal";
 
 import logo from "../../assets/icons/logo.svg";
 import firstImg from "../../assets/images/first.svg";
 import secondImg from "../../assets/images/second.svg";
 import global from "../../assets/images/global.svg";
-import partners from "../../assets/images/partners.svg";
+//import partners from "../../assets/images/partners.svg";
 
-import iconUser from "../../assets/icons/user.svg";
-import iconServer from "../../assets/icons/server.svg";
-import iconLocal from "../../assets/icons/local.svg";
+//import iconUser from "../../assets/icons/user.svg";
+//import iconServer from "../../assets/icons/server.svg";
+//import iconLocal from "../../assets/icons/local.svg";
 
 import { products } from "../../data/products.json";
 
@@ -97,8 +98,8 @@ function Home() {
         </Row>
         <Row>
           <ColumnSpecial red="red">
-            <h1>Some of our Services</h1>
-            <div className="items">
+            <h1 id='title-two'>Some of our Services</h1>
+            <ProductsContent>
               {products.map((product) => (
                 <Items
                   img={product.img}
@@ -109,7 +110,7 @@ function Home() {
                   key={product.id}
                 />
               ))}
-            </div>
+            </ProductsContent>
           </ColumnSpecial>
         </Row>
       </Container>

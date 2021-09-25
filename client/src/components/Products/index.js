@@ -25,9 +25,10 @@ function Products({ img, title, description, value, id }) {
   return (
     <Container>
       <img src={img} alt="" />
+
       <h1>{title}</h1>
-      <p>{description}</p>
-      <p>$ {value}</p>
+      <p id="description">{description}</p>
+      <p id="price">$ {value}</p>
       <button onClick={() => handlePay()}>
         {click ? "Catching..." : "Get"}
       </button>

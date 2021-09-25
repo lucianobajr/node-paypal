@@ -1,7 +1,4 @@
 import styled from "styled-components";
-
-import { darken } from "polished";
-
 export const Wrapper = styled.div`
   padding: 48px 0 0 0;
   background: #fff;
@@ -28,7 +25,7 @@ export const Row = styled.div`
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+  flex-direction: row;
   background-color: ${({ imgStart }) => (imgStart ? "#F95E53" : "#FFF")};
 `;
 
@@ -60,6 +57,16 @@ export const ColumnSpecial = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: ${({ red }) => (red ? "#F95E53" : "#FFF")};
+  
+
+  #title-two {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+
+    color: #ffffff;
+  }
 `;
 
 export const ImgWrapper = styled.div`
@@ -88,4 +95,16 @@ export const ImgSpecial = styled.img`
   vertical-align: middle;
   display: inline-block;
   max-height: 683px;
+`;
+
+export const ProductsContent = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 52px 0;
+  
+  
 `;
