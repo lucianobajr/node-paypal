@@ -7,8 +7,11 @@ import { Wrapper, Content, Row, ImgWrapper, Img } from "./styles";
 import { Container } from "../../styles/global";
 
 import { Zoom, Fade } from "react-reveal";
+import { useHistory } from "react-router";
 
 function NotFound() {
+  const history = useHistory();
+
   return (
     <Wrapper>
       <Container>
@@ -28,7 +31,7 @@ function NotFound() {
                 that may never reach its rightful owner, a compassionate school
                 teacher in Brooklyn.
               </p>
-              <button>
+              <button onClick={() => history.push("/")}>
                 take me to a safe place{" "}
                 <FiArrowRight size={24} color="#f95e53" />
               </button>

@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   color: #fff;
-  padding: 56px 36px 44px 36px;
+  padding: 36px 36px 44px 36px;
   background: #fff;
+
+  @media screen and (max-width: 576px) {
+    padding: 36px 10px 44px 10px;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -28,11 +32,15 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  flex-wrap: wrap;
 `;
 
 export const Logo = styled.div`
   display: flex;
   flex-direction: column;
+
+  margin-top: 20px;
 
   .content-logo {
     display: flex;
@@ -60,10 +68,25 @@ export const Logo = styled.div`
 
     color: #000000;
   }
+
+  @media screen and (max-width: 472px) {
+    .content-logo {
+      > p {
+        font-size: 1.5rem;
+      }
+    }
+    > p {
+      max-width: 100%;
+
+      font-size: 1rem;
+    }
+  }
 `;
 export const SocialNetworks = styled.div`
   display: flex;
   flex-direction: column;
+
+  margin-top: 20px;
 
   .title-social {
     font-family: "Roboto Slab";
@@ -102,6 +125,8 @@ export const Newsletter = styled.div`
   display: flex;
   flex-direction: column;
 
+  margin-top: 20px;
+
   .title-newsletter {
     font-family: "Roboto Slab";
     font-style: normal;
@@ -112,11 +137,14 @@ export const Newsletter = styled.div`
   }
 
   .content-newsletter {
+    width: 100%;
     margin-top: 13px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    flex-wrap: wrap;
 
     input {
       width: 376px;
@@ -151,6 +179,33 @@ export const Newsletter = styled.div`
       border-radius: 10px;
 
       margin-left: 38px;
+    }
+  }
+
+  @media screen and (max-width: 606px) {
+    .content-newsletter {
+      button {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 512px) {
+    width: 100%;
+    .content-newsletter {
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      input {
+        width: 100%;
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      button {
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
   }
 `;
