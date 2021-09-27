@@ -1,5 +1,29 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lucianobajr/node-paypal%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
+# :rocket: Technologies
 
-# 
-Email: comprador@node.com
-Senha: 12345678
+## Front-end
+
+- [ReactJS](https://reactjs.org/)
+- [styled-components](https://www.styled-components.com/)
+- [react-reveal](https://www.react-reveal.com/)
+- [polished](https://polished.js.org)
+- [VS Code][vscode]
+
+## Back-end
+
+- [Express](https://expressjs.com/pt-br/)
+- [Paypal Rest SDK](https://developer.paypal.com/docs/api/rest-sdks/)
+- [Yup](https://github.com/jquense/yup)
+- [VS Code][vscode]
+
+# Design :art:
+
+https://www.figma.com/community/file/1024102052690050665/Experience
+
+# User account to use in Sandbox :credit_card: :
+
+    Email: comprador@node.com
+    Senha: 12345678
+
+# :memo: License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/lucianobajr/node-paypal/blob/master/LICENSE) for more information.
