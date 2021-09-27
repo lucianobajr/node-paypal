@@ -48,7 +48,7 @@ export const Heading = styled.h1`
 
   color: #000000;
 
-  @media screen and (max-width: 392px){
+  @media screen and (max-width: 392px) {
     font-size: 2rem;
   }
 `;
@@ -64,7 +64,7 @@ export const Subtitle = styled.p`
 
   margin: 57px 0;
 
-  @media screen and (max-width: 392px){
+  @media screen and (max-width: 392px) {
     font-size: 1.5rem;
   }
 `;
@@ -106,12 +106,78 @@ export const Button = styled.button`
 
   &:hover {
     background: ${darken(0.2, "#f95e53")};
-    transform:scale(1.03);
+    transform: scale(1.03);
   }
 
-  @media screen and (max-width: 392px){
+  @media screen and (max-width: 392px) {
     width: 100%;
 
     font-size: 1.25rem;
+  }
+`;
+
+export const Infos = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 20px 0;
+
+  @media screen and (max-width: 726px) {
+    display: none;
+    padding: 0;
+  }
+`;
+
+export const Info = styled.div`
+  display: flex;
+
+  & + div {
+    padding-left: 5%;
+    padding-right: 5%;
+    border-left: 2px solid #eeeeee;
+  }
+
+  .circle {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(249, 94, 83, 0.23);
+
+    margin-right: 23px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    #value {
+      font-family: "Roboto Slab";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+
+      color: #000000;
+    }
+
+    #info {
+      font-family: "Roboto Slab";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+
+      color: #000000;
+    }
+  }
+
+  @media screen and (max-width: 726px) {
+    display: none;
+    
   }
 `;
