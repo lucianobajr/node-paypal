@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="GitHub top language" src="./.github/experience.png"  height="500px">
+  <img alt="GitHub top language" src="./.github/experience.png"  height="400px">
 <p>
 
 # :rocket: Technologies
