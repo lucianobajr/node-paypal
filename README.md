@@ -1,3 +1,22 @@
+<h4 align="center">
+  Experience: Discover the best references in technology and user experience
+</h4>
+
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lucianobajr/node-paypal.svg">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/lucianobajr/node-paypal.svg">
+  <a href="https://github.com/lucianobajr/node-paypal/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lucianobajr/node-paypal.svg">
+  </a>
+
+  <a href="https://github.com/lucianobajr/node-paypal/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/lucianobajr/node-paypal.svg">
+  </a>
+
+  <img alt=" " src="https://img.shields.io/github/license/lucianobajr/node-paypal">
+<p>
+
 <p align="center">
   <img alt="GitHub top language" src="./.github/experience.png"  height="400px">
 <p>
