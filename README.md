@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="GitHub top language" src="./.github/experience.png"  height="500px">
+<p>
+
 # :rocket: Technologies
 
 ## Front-end
@@ -6,14 +10,12 @@
 - [styled-components](https://www.styled-components.com/)
 - [react-reveal](https://www.react-reveal.com/)
 - [polished](https://polished.js.org)
-- [VS Code][vscode]
 
 ## Back-end
 
 - [Express](https://expressjs.com/pt-br/)
 - [Paypal Rest SDK](https://developer.paypal.com/docs/api/rest-sdks/)
 - [Yup](https://github.com/jquense/yup)
-- [VS Code][vscode]
 
 # Design :art:
 
